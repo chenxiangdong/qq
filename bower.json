@@ -1,0 +1,14 @@
+{
+  "name": "qq",
+  "main": "index.html",
+  "description": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
