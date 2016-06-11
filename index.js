@@ -1,54 +1,3 @@
-var date=[
-  {
-    "filename": "./musics/1.mp3",
-    "duration": "04:30",
-    "title": "喜欢你",
-    "album": "a",
-    "artist": "Beyond"
-  },
-  {
-    "filename": "./musics/2.mp3",
-    "duration": "03:35",
-    "title": "可惜没如果",
-    "album": "a",
-    "artist": "林俊杰"
-  },
-  {
-    "filename": "./musics/3.mp3",
-    "duration": "04:13",
-    "title": "下雨天",
-    "album": "s",
-    "artist": "南拳妈妈"
-  },
-  {
-    "filename": "./musics/4.mp3",
-    "duration": "04:32",
-    "title": "明天,你好",
-    "album": "a",
-    "artist": "牛奶咖啡"
-  },
-  {
-    "filename": "./musics/5.mp3",
-    "duration": "03:48",
-    "title": "唐人",
-    "album": "最近还好么",
-    "artist": "孙子涵"
-  },
-  {
-    "filename": "./musics/6.mp3",
-    "duration": "03:43",
-    "title": "眼泪的错觉",
-    "album": "2010年四月热搜歌",
-    "artist": "王露凝"
-  },
-  {
-    "filename": "./musics/7.mp3",
-    "duration": "03:14",
-    "title": "将心比心",
-    "album": "将心比心",
-    "artist": "夏天"
-  }
-]
 /////////////绘制页面
 var huizhi=function(){
   $.each(date,function(i,v){
@@ -65,7 +14,7 @@ var huizhi=function(){
   audio.src=date[0].filename
 }
 ////////////获取数据
-$.getJSON('/date.json')
+$.getJSON('date.json')
 .done(function(d){
   date=d
   huizhi()
